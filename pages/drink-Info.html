@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Information</title>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="../SCSS/style.css">
+</head>
+
+<body>
+    <!-- header area atart  -->
+    <header class="header container">
+        <div class="logo">
+            <h3>Food & Drinks Blogger</h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="#">food</a></li>
+                <li><a href="#">drink</a></li>
+                <li><a href="#">best restaurants</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">work with me</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header area end -->
+    <!-- drink Information area  -->
+    <section class="drinkInfo">
+        <div class="container">
+            <div class="drinkBox">
+                <!-- single section  -->
+                <div class="drinkItem">
+                    <h2>Drink</h2>
+                    <img src="../assets/image/blog-img-1.jpg" alt="drink image">
+                    <h2>10 Festive Pride Cocktails To Party With</h2>
+                    <a href="#input">Leave a Comment / Drink / By Alex</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <!--end of single section  -->
+                <!-- single section  -->
+                <div class="drinkItem">
+                    <img src="../assets/image/blog-08.jpg" alt="drink image">
+                    <h2>10 Festive Pride Cocktails To Party With</h2>
+                    <a href="#input">Leave a Comment / Drink / By Alex</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <!--end of single section  -->
+                <!-- single section  -->
+                <div class="drinkItem">
+                    <img src="../assets/image/blog-03.jpg" alt="drink image">
+                    <h2>10 Festive Pride Cocktails To Party With</h2>
+                    <a href="#input">Leave a Comment / Drink / By Alex</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <!--end of single section  -->
+            </div>
+        </div>
+    </section>
+    <!-- js  -->
+    <script>
+        const header = document.querySelector(".header");
+        // Onscroll add sticky class
+        window.onscroll = function () {
+            if (window.scrollY > 10) {
+                header.classList.add("bgAdd");
+            } else {
+                header.classList.remove("bgAdd");
+            }
+        };
+    </script>
+</body>
+
+</html>

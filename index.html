@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./SCSS/style.css">
+</head>
+
+<body>
+    <!-- header area atart  -->
+    <header class="header container">
+        <div class="logo">
+            <h3>Food & Drinks Blogger</h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="#">food</a></li>
+                <li><a href="#">drink</a></li>
+                <li><a href="#">best restaurants</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">work with me</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header area end -->
+    <!-- hero area start  -->
+    <section class="hero">
+        <div class="box">
+            <div class="boxItem">
+                <p>FOOD, DRINK & RESTAURANTS REVIEWS</p>
+                <h2>Join our 100,000+ Subscribers List Today!</h2>
+                <input type="search" name="" placeholder="Email Address" required>
+                <button>subscribe now</button>
+            </div>
+        </div>
+    </section>
+    <!-- hero area end -->
+    <!-- blog section area start  -->
+    <section class="blog container padding80">
+        <div class="card">
+            <!-- single card  -->
+            <div class="cardItem">
+                <a href="./pages/page-1.html">
+                    <img src="./assets/image/blog-img-1.jpg" alt="blog image">
+                    <div class="innerCard">
+                        <a href="./pages/drink-Info.html">DRINK</a>
+                        <h2>25 Sophisticated Drinks To Get You Feeling Fancy</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <a href="./pages/page-1.html">read more...</a>
+                    </div>
+                </a>
+            </div>
+            <!-- end of single card  -->
+            <!-- single card  -->
+            <div class="cardItem">
+                <a href="./pages/page-2.html">
+                    <img src="./assets/image/blog-08.jpg" alt="blog image">
+                    <div class="innerCard">
+                        <a href="./pages/drink-Info.html">DRINK</a>
+                        <h2>20 Easy Vodka Drinks With 4 Ingredients Or Less</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <a href="./pages/page-2.html">read more...</a>
+                    </div>
+                </a>
+            </div>
+            <!-- end of single card  -->
+            <!-- single card  -->
+            <div class="cardItem">
+                <a href="./pages/page-3.html">
+                    <img src="./assets/image/blog-03.jpg" alt="blog image">
+                    <div class="innerCard">
+                        <a href="./pages/drink-Info.html">DRINK</a>
+                        <h2>Garlic-Butter Steak</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <a href="./pages/page-3.html">read more...</a>
+                    </div>
+                </a>
+            </div>
+            <!-- end of single card  -->
+        </div>
+    </section>
+    <!-- blog section area end -->
+    <!-- js  -->
+    <script>
+        const header = document.querySelector(".header");
+        // Onscroll add sticky class
+        window.onscroll = function () {
+            if (window.scrollY > 10) {
+                header.classList.add("bgAdd");
+            } else {
+                header.classList.remove("bgAdd");
+            }
+        };
+    </script>
+</body>
+
+</html>

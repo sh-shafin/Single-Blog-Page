@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,700;6..72,800&family=Poppins:wght@300;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf9f7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+p {
+  color: var(--clr-primary-2);
+  font-size: 16px;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+.padding80 {
+  padding: 80px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  padding: 30px 125px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: 0.4s;
+  z-index: 1111;
+}
+.header .nav ul li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+  transition: 0.4s;
+}
+.header .nav ul li a:hover {
+  color: rgb(24, 85, 87);
+}
+
+.header.bgAdd {
+  background-color: white;
+  padding: 25px 125px;
+}
+
+.hero {
+  background: url(../assets/image/hero-img.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .box {
+  width: 600px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+}
+.hero .box .boxItem {
+  text-align: center;
+  font-family: "Newsreader", serif;
+}
+.hero .box .boxItem p {
+  letter-spacing: 4px;
+}
+.hero .box .boxItem h2 {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 30px 0;
+  letter-spacing: 4px;
+}
+.hero .box .boxItem input {
+  height: 35px;
+  width: 300px;
+  outline: none;
+  background-color: #fbf9f7;
+  border: 1px solid black;
+  padding: 0 20px;
+  transition: 0.4s;
+}
+.hero .box .boxItem input:focus {
+  border: 1px solid transparent;
+}
+.hero .box .boxItem button {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 15px 25px;
+  background-color: #102a42;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.4s;
+  font-family: "Newsreader", serif;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.hero .box .boxItem button:hover {
+  background-color: #061019;
+}
+
+.blog .card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.blog .card .cardItem {
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+}
+.blog .card .cardItem:hover {
+  box-shadow: 0 0 20px #ddd;
+  transform: scale(1.03);
+}
+.blog .card .cardItem .innerCard {
+  padding: 0px 20px;
+}
+.blog .card .cardItem .innerCard a {
+  display: block;
+  margin: 0px 0 20px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-family: "IBM Plex Mono", monospace;
+}
+.blog .card .cardItem .innerCard a:hover {
+  color: #990000;
+}
+.blog .card .cardItem .innerCard a:nth-of-type(2) {
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #b08967;
+}
+.blog .card .cardItem .innerCard h2 {
+  font-family: "Newsreader", serif;
+}
+.blog .card .cardItem .innerCard p {
+  padding: 15px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+
+.blogOne .blogInfo {
+  background-color: #ffffff;
+  padding: 80px 100px 50px 100px;
+  margin-top: 80px;
+}
+.blogOne .blogInfo h2 {
+  padding: 20px 0;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.blogOne .blogInfo a {
+  color: #b08967;
+}
+.blogOne .blogInfo p {
+  padding: 20px 0;
+  color: gray;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.blogOne .previousBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.blogOne .previousBtn a {
+  display: block;
+  margin: 50px 100px;
+  color: #b08967;
+}
+.blogOne .previousBtn a i {
+  padding: 0px 5px;
+}
+
+.inputBox {
+  background-color: #ffffff;
+  padding: 80px 100px 50px 100px;
+  margin-bottom: 80px;
+}
+.inputBox h3 {
+  font-size: 25px;
+  font-family: "Newsreader", serif;
+  font-weight: normal;
+}
+.inputBox p {
+  padding: 10px 0;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.inputBox .form .txtarea {
+  padding: 20px;
+  resize: vertical;
+  height: 200px;
+  width: 100%;
+  margin: 25px 0;
+  border: 1px solid gray;
+  outline: none;
+}
+.inputBox .form .txtarea:focus {
+  border: 1px dotted rgb(94, 94, 4);
+}
+.inputBox .form .inputWidth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.inputBox .form .inputWidth .inputField {
+  height: 40px;
+  width: 280px;
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid gray;
+  background-color: #fbf9f7;
+  transition: 0.4s;
+}
+.inputBox .form .inputWidth .inputField:focus {
+  border: 1px solid transparent;
+}
+.inputBox .form .checkbox {
+  margin: 30px 0;
+}
+.inputBox .form .checkbox input {
+  margin-right: 10px;
+}
+.inputBox .form button {
+  padding: 15px 25px;
+  background-color: #102a42;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.4s;
+  font-family: "Newsreader", serif;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.inputBox .form button:hover {
+  background-color: #061019;
+}
+.inputBox .form button i {
+  padding-left: 5px;
+}
+
+.drinkInfo .drinkBox {
+  background-color: #ffffff;
+  padding: 50px;
+  margin-top: 80px;
+}
+.drinkInfo .drinkBox .drinkItem h2 {
+  color: #b08967;
+  font-size: 35px;
+  font-family: "Newsreader", serif;
+  font-weight: normal;
+  padding: 30px 0;
+}
+.drinkInfo .drinkBox .drinkItem img {
+  border-top: 1px solid #b08967;
+  padding-top: 30px;
+}
+.drinkInfo .drinkBox .drinkItem a {
+  color: #b08967;
+}
+.drinkInfo .drinkBox .drinkItem p {
+  margin: 15px 0 40px 0;
+}/*# sourceMappingURL=style.css.map */

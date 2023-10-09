@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page 1</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="../SCSS/style.css">
+</head>
+
+<body>
+    <!-- header area atart  -->
+    <header class="header container">
+        <div class="logo">
+            <h3>Food & Drinks Blogger</h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="#">food</a></li>
+                <li><a href="#">drink</a></li>
+                <li><a href="#">best restaurants</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">work with me</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header area end -->
+    <!-- blog area start  -->
+    <section class="blogOne">
+        <div class="container">
+            <div class="blogInfo">
+                <img src="../assets/image/blog-08.jpg" alt="blog image">
+                <h2>20 Easy Vodka Drinks With 4 Ingredients Or Less</h2>
+                <a href="#input">Leave a Comment / Drink / By Alex</a>
+                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                    unde omnis iste.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- previous button  -->
+            <div class="previousBtn">
+                <a href="./page-1.html"><i class="fa-solid fa-arrow-left-long"></i>Previous Post</a>
+                <a href="./page-3.html">Next Post <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+        </div>
+    </section>
+    <!-- blog area end -->
+    <!-- input area start  -->
+    <section id="input">
+        <div class="container">
+            <div class="inputBox">
+                <h3>Leave a Comment</h3>
+                <p>Your email address will not be published. Required fields are marked *</p>
+                <div class="form">
+                    <form action="">
+                        <textarea class="txtarea" name="" id="" placeholder="Type here..." required></textarea>
+                        <div class="inputWidth">
+                            <input class="inputField" type="text" name="" placeholder="Name*" required>
+                            <input class="inputField" type="email" name="" placeholder="Email*" required>
+                            <input class="inputField" type="text" name="" placeholder="Website*" required>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="">
+                            <label for="">Save my name, email, and website in this browser for the next time I
+                                comment.</label>
+                        </div>
+                        <button>post comment <i class="fa-solid fa-angles-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- input area end -->
+    <!-- js  -->
+    <script>
+        const header = document.querySelector(".header");
+        // Onscroll add sticky class
+        window.onscroll = function () {
+            if (window.scrollY > 10) {
+                header.classList.add("bgAdd");
+            } else {
+                header.classList.remove("bgAdd");
+            }
+        };
+    </script>
+</body>
+
+</html>
